@@ -694,6 +694,32 @@ section {
     height: 4rem;
 }
 
+#ServiciosMonitoreo {
+    position: relative;
+    overflow: hidden;
+}
+
+#ServiciosMonitoreo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: black;
+    z-index: -2;
+    clip-path: polygon(0 55%, 100% 40%, 100% 100%, 0% 100%);
+}
+
+.world-image {
+    max-width: 200%;
+    width: auto;
+    height: 40rem;
+    z-index: -1;
+    opacity: 0.8;
+    margin-bottom: 5rem;
+}
+
 .text-width-relative {
     width: 40rem;
     text-align: justify;
