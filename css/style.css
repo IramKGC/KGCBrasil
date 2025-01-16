@@ -671,7 +671,7 @@ section {
         
     }
 }
-@media(max-width:576px){    
+@media(max-width:576px){
     .play-button {
         top: -100px;
     }s
@@ -696,7 +696,7 @@ section {
 
 #ServiciosMonitoreo {
     position: relative;
-    overflow: hidden;
+    overflow: visible;
 }
 
 #ServiciosMonitoreo::before {
@@ -704,11 +704,12 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 120vw;
     height: 100%;
     background-color: black;
     z-index: -2;
     clip-path: polygon(0 55%, 100% 40%, 100% 100%, 0% 100%);
+    transform: translateX(-10%);
 }
 
 .world-image {
@@ -718,6 +719,49 @@ section {
     z-index: -1;
     opacity: 0.8;
     margin-bottom: 5rem;
+}
+
+.icon-general {
+    border-radius: 50%;
+    width: 3rem;
+}
+
+.carga-image {
+    border-radius: 10%;
+    width: 100rem;
+    height: 43rem;
+    position: absolute;
+    display: flex;
+    transform: translateX(-20%);
+    padding-bottom: 2rem;
+}
+
+.icon-image {
+    border-radius: 50%;
+}
+
+.icon-cont {
+    background-color: rgb(250, 250, 144);
+    border-radius: 50%;
+    top: -4rem; 
+    left: 50%;
+    transform: translateX(10%);
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem; 
+    height: 4rem; 
+}
+
+.title_servicioMonitoreo {
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: start; 
+    margin-top: -1rem; 
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .text-width-relative {
@@ -790,7 +834,7 @@ section {
     background-size: cover;
     background-position: center 60%;
     width: 100vw;
-    height: 90vh;
+    height: 95vh;
     position: absolute;
     top: 0;
     bottom: 20rem;
@@ -835,6 +879,7 @@ section {
 #Estadisticas .col-xl-3:last-child {
     border-right: none; 
 }
+
 
 .oval-image {
     border-radius: 50%;
@@ -888,7 +933,7 @@ section {
     .responsive-img {
         max-width: 78%;
         border-radius: 100%;
-        max-height: 12%;
+        max-height: 13rem;
     }
 
     .d-flex.flex-row {
@@ -898,6 +943,18 @@ section {
     .d-flex.flex-row.align-items-center {
         height: auto;
     }
+    .ServiciosGenerales {
+        margin-left: 2rem;
+    }
+
+    .oval-container {
+        max-height:42rem;
+        max-width: 20rem;
+        display: flex;
+        align-items: center;
+        margin-right: -3rem;
+    }
+
 }
 
 @media (max-width: 576px) {
